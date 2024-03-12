@@ -1,0 +1,44 @@
+apple
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+const randomNumber = getRandomNumber();
+const findLargestNumber = numbers => Math.max(...numbers);
+
+const getUniqueValues = array => [...new Set(array)];
+
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+
+const isEven = num => num % 2 === 0;
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+
+const multiply = (a, b) => a * b;
+const getRandomSubset = (array, size) => array.slice(0, size);
+const getRandomSubset = (array, size) => array.slice(0, size);
+
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+apple
+
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+banana / kiwi
+const removeDuplicates = array => Array.from(new Set(array));
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+kiwi
+
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+const findLargestNumber = numbers => Math.max(...numbers);
+kiwi + grape
+const reverseWords = str => str.split(" ").reverse().join(" ");
+grape
+
+const randomNumber = getRandomNumber();
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+grape * 90,42,7,52,87,6,79,62,65,51,58,46,21,24,1,95,37,6,48,27,7,78,33,33,20,69,8,31,9,56,13,75,46,14,13,45,90,52,64,34,57,97,88,46,90,70,87,48,39,11,25,16,41,82,87,16,17,52,39,12
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
