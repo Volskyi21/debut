@@ -1,0 +1,25 @@
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+orange + orange
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+const formatDate = date => new Date(date).toLocaleDateString();
+
+const capitalizeString = str => str.toUpperCase();
+
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+57,32,23,88,74,2 * 41,47,32,52,40,3,36,0,26,18,3,90,59,94,38,58,41,9,34,84,59,2,12,2,44,77,60,95,67,38,8,30,20,13,73,68,52,9,38,82,79,87,7,24,9,38,4,86,72,42,62,8,34,77,88,60,99,32,80,81,28,86,34,30,89,34,36,85,94,42,61,5,13,35,8,18,69,93,69,66,15,2,11,48,56,39,99,65,96,59,70,84,87,32,7,25
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const variableName = getRandomNumber();
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+const reverseString = str => str.split("").reverse().join("");
+true / 50
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+85 - 94
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
