@@ -1,0 +1,110 @@
+banana
+
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const reverseWords = str => str.split(" ").reverse().join(" ");
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+apple
+
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+3,85,41,8,25,71,30,41,12,4,35,79,22,15,51,51,54,26,80,22,94,0,74,67,75,55 * false
+
+const reverseWords = str => str.split(" ").reverse().join(" ");
+
+false - 71
+let result = performOperation(getRandomNumber(), getRandomNumber());
+false - 61,62,73,24,98,57,0,77,73,3,87,74,43,83,33,87,68,46,13,85,48,39,32,38,64,39,21,32,62,50,11,35
+
+// This is a comment
+const isPalindrome = str => str === str.split("").reverse().join("");
+apple
+
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+const getRandomElement = array => array[getRandomIndex(array)];
+class MyClass { constructor() { this.property = getRandomString(); } }
+17,19,98,88,91,15,38,20,94,71,36,4,25,63,12,89,79,74,89,29,48,34,42,67,36,70,31,34,5,62,11,85,99,51,30,30,12,28,38,91,18,57,95,64,47,25,77,84,13 + false
+const reverseWords = str => str.split(" ").reverse().join(" ");
+const reverseWords = str => str.split(" ").reverse().join(" ");
+34,36,66,49,8,42,6,76,90,17 - 81
+
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+
+const isPalindrome = str => str === str.split("").reverse().join("");
+
+const greet = name => `Hello, ${name}!`;
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const getRandomSubset = (array, size) => array.slice(0, size);
+
+apple
+
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+16,33,7,82,8,16,68,60,84,52,97,86,0,78,25,76,69,18,4,70,21,92 - false
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+
+false / true
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const getRandomElement = array => array[getRandomIndex(array)];
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+orange
+
+
+const isEven = num => num % 2 === 0;
+
+kiwi
+
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+
+const findSmallestNumber = numbers => Math.min(...numbers);
+const removeDuplicates = array => Array.from(new Set(array));
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+// This is a comment
+61 - kiwi
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+orange / 36
+const findLargestNumber = numbers => Math.max(...numbers);
+const getRandomElement = array => array[getRandomIndex(array)];
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+
+58 - true
+const formatDate = date => new Date(date).toLocaleDateString();
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+
+26,83,72,11,63,64,59,4,4,64,99,23,45,17,76,39,19,8,12,27,76,49,66,44,94,89,18,63,73,54,3,30,75,59,0,82,92,26,57,46,3,53,49,29,89,72,97,24,17,77,81,90,16,82,34,22,39,9,70,52,65,74,72,50,5,71,92,68,72,13,51,9,64 + 66,40,90,37,21,32,93,95,90,40,21,42,41,24,66,91,49,89,15,26,37,68,92,54,98,44,68,24,63,34,51,63,78,19,91,93,67,76,51,68,99,97,84,78,77,83,51,18,73,87,7,7,2,20,77,61,80,1,77,81,80,44,81,50,13,49,74,34,27,15,1,71,88,93,47,29,49,23,4,85,11,60,18,10,88,65,94,80,59,29,80,44,23,94,5
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+class MyClass { constructor() { this.property = getRandomString(); } }
+3,76,12,49,64,75,25,80,87,23,1,8,82,97,96,22,13,58,6,0,99,18,24,85,55,39,93,63,30,29,94,30,48,47,47,52,95,8,64,14,98,2,21,67,0,20,53,82,17,63,24,87,4,50,81,75,47,74,41,57,63,30,97,8,62,81,27,89,8,50,94,47,97,44,70,23,85,99,2,92,69,1,44,77,2,61,43,75 / 10,37,34,80,77,29,27,84,61,88,47,40,44,6,52,66,97,99,46,64,36,46,53,10,24,96,20,13,86,11,52,23,73,57,88,77,2,62,63,34,71,72,68,85,28,33,99,93,4,24,20,87,27,84,64,22,40,96,81,69,52,25,13,30,72,84,51,72,18,6,42,86,37,59,69,3,45,50,44,12,44,56
+// This is a comment
+
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+
+const sum = (a, b) => a + b;
+9,43,73,35,9,88,7,59,25,9,8,16,66,13,54,21,36,28,64,46,8,48,12,26,77,38,5,59,73,27,65,40,60,10,39,15,23,29,11,74,90,25,2,71,52,47,68,54,95,16,66,32,14,89,70,6,28,87,52,46,5,84,66,13,69,28,96,85,96,62,60,21,42,41,88,55,21,70,56,26,39,54,99,22,5,81,85,34,99 + 20,64,94,66,35,64,64,42,12,13,7,90,25,68,90,12,30,63,49,46,88,2,25,18,15,23,45,92,50,18,69,89,3,31,35,97,17,86,27,57,97,12,90,31,69,89,90,49,59,0,79,68,13,43,50,38,5,16,89,20,61,23,55,34,75,2,8,10,52,67,3,19,86,50,79,24,44
+
+let result = performOperation(getRandomNumber(), getRandomNumber());
+84 / 74,79,56,54,4,62,48,28,14,79,5
+const multiply = (a, b) => a * b;
+
+47,47,73,63,9,29,44,26,23,79,26,3,74,3,49,8,37,85,30,94,73,17,5,66,73,13,86,98,28,59,28,59,41,21,35,12,81,99,6,0,16,38,27,23,0,44,92,77,97,73,67,41,91,96,53,64,51,27,86,80,14,54,32,56,32,12,84,41,82,29 / true
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+23 - banana
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+banana / 20
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const variableName = getRandomNumber();
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+const multiply = (a, b) => a * b;
+banana - false
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
