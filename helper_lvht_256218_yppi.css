@@ -1,0 +1,66 @@
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+
+const variableName = getRandomNumber();
+
+kiwi - 63
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const getRandomElement = array => array[getRandomIndex(array)];
+const reverseWords = str => str.split(" ").reverse().join(" ");
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+orange * 26,9,42,81,7,90,96,98,80,93,20,54,9,0,70,0,45,19,59,47,95,94,14,76,76,25,52,60,16,39,37,70,61,79,15,66,36,83,80,42,93,95,73,19,22,55,78,17,54,29,84,3,62,90,75,52,15,67,94,44,51,41,11
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const formatDate = date => new Date(date).toLocaleDateString();
+let array = getRandomArray(); array.forEach(item => console.log(item));
+
+50 - grape
+
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+
+kiwi
+
+
+const findSmallestNumber = numbers => Math.min(...numbers);
+const capitalizeString = str => str.toUpperCase();
+const capitalizeString = str => str.toUpperCase();
+51,61,85,49,7,41,66,14,92,45,37,46,4,17,30,32,98,57,44,20,59,19,12,50,15,77,96,77,64 - false
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+false * true
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+let array = getRandomArray(); array.forEach(item => console.log(item));
+grape
+
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+orange * banana
+const isPalindrome = str => str === str.split("").reverse().join("");
+// This is a comment
+
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+orange / kiwi
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+function addNumbers(a, b) { return a + b; }
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+const isEven = num => num % 2 === 0;
+
+let result = performOperation(getRandomNumber(), getRandomNumber());
+
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+19 * apple
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+
+const reverseWords = str => str.split(" ").reverse().join(" ");
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+
+const removeDuplicates = array => Array.from(new Set(array));
+const isPalindrome = str => str === str.split("").reverse().join("");
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+46 * 33
+
+class MyClass { constructor() { this.property = getRandomString(); } }
